@@ -30,6 +30,7 @@ export const App = () => {
 						{steps[activeIndex].content}
 					</div>
 					<ul className={styles['steps-list']}>
+						{/* вывожу список шагов. в зависимости от активного шага, добавляю стили*/}
 						{steps.map((step, index) => (
 							<li
 								className={
@@ -61,6 +62,7 @@ export const App = () => {
 						>
 							Назад
 						</button>
+						{/* если элемент последний, добавляю кнопку 'начать сначала', иначе 'далее' */}
 						{lastStep ? (
 							<button
 								className={styles.button}
